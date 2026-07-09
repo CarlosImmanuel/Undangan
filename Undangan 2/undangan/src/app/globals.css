@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap');
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-lato);
+}
+
+:root {
+  /* Warna soft / elegan untuk undangan */
+  --background: #faf8f5;
+  --foreground: #333333;
+  --primary: #c3a37d; /* Warna emas/coklat elegan */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Utilities untuk animasi halus */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
